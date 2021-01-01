@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
+import {FormsModule} from '@angular/forms';
+import {MyCommonModule} from './shared/my-common/my-common.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { LayoutModule } from './layout/layout.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LayoutModule
+    LayoutModule,
+    FormsModule,
+    MyCommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
