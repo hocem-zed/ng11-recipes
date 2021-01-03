@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MyCommonModule} from './shared/my-common/my-common.module';
 
 @NgModule({
@@ -16,7 +16,8 @@ import {MyCommonModule} from './shared/my-common/my-common.module';
     AppRoutingModule,
     LayoutModule,
     FormsModule,
-    MyCommonModule
+    MyCommonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
