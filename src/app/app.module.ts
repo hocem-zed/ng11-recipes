@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http';
 
+import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
@@ -13,11 +14,12 @@ import {MyCommonModule} from './shared/my-common/my-common.module';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     AppRoutingModule,
     LayoutModule,
-    FormsModule,
-    MyCommonModule,
-    ReactiveFormsModule
+    MyCommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
