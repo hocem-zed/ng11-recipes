@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {LayoutComponent} from './layout.component';
 import {RecipesComponent} from './recipes/recipes.component';
+import {AuthComponent} from './auth/auth.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,9 @@ const routes: Routes = [
       },
       {
         path: 'shopping-list', loadChildren: () => import('./shopping-list/shopping-list.module').then(m => m.ShoppingListModule)
+      },
+      {
+        path: 'auth', component: AuthComponent
       }
     ]
   }
